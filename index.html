@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Discord Webhook Client</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Discord Webhook Client</h2>
+
+<label for="webhookUrl">Webhook URL</label>
+<input type="text" id="webhookUrl" placeholder="Paste your webhook URL here" />
+
+<label for="messageContent">Message Content (Send)</label>
+<textarea id="messageContent" rows="3" placeholder="Write your message"></textarea>
+
+<label for="editContent">New Content (Edit Last Message)</label>
+<textarea id="editContent" rows="3" placeholder="Write new content to edit last message"></textarea>
+
+<button id="sendBtn">Send Message</button>
+<button id="editBtn" disabled>Edit Last Message</button>
+<button id="deleteBtn" disabled>Delete Last Message</button>
+
+<div class="status" id="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
